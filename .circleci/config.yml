@@ -1,11 +1,16 @@
 version: 2.1
 
+orbs:
+  buildpulse: workshop64/buildpulse@0.3
+
 jobs:
   build:
     docker:
       - image: circleci/ruby:2.6
     steps:
       - checkout
+
+      - buildpulse/setup # Set up BuildPulse connection *before* running the test suite
 
       - run:
           name: Install dependencies
@@ -16,3 +21,8 @@ jobs:
       - run:
           name: Run tests
           command: bundle exec rake
+
+      - buildpulse/upload:
+          path: test/reports
+          account-id: 68192324 # Replace this value with your BuildPulse account ID
+          repository-id: 248515673 # Replace this value with your BuildPulse repository ID
