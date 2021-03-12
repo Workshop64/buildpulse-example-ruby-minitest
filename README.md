@@ -4,11 +4,11 @@ This is an example [minitest](https://github.com/seattlerb/minitest) project dem
 
 ## CircleCI Integration
 
-If you have an existing minitest project building on CircleCI, this [diff](https://github.com/Workshop64/buildpulse-example-ruby-minitest/compare/7c0f835...circle-ci) shows how to set up your `.circleci/config.yml` to send test results to BuildPulse.
+If you have an existing minitest project building on CircleCI, this [diff](https://github.com/buildpulse/buildpulse-example-ruby-minitest/compare/7c0f835...circle-ci) shows how to set up your `.circleci/config.yml` to send test results to BuildPulse.
 
 ## GitHub Actions CI Integration
 
-If you have an existing minitest project building on GitHub Actions CI, this [diff](https://github.com/Workshop64/buildpulse-example-ruby-minitest/compare/86c2970...github-actions) shows how to set up your GitHub Actions workflow to send test results to BuildPulse.
+If you have an existing minitest project building on GitHub Actions CI, this [diff](https://github.com/buildpulse/buildpulse-example-ruby-minitest/compare/86c2970...github-actions) shows how to set up your GitHub Actions workflow to send test results to BuildPulse.
 
 ---
 
